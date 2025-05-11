@@ -1,0 +1,66 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "hero-img hero-img hero-img"
+        "blog-1 blog-2 blog-3"
+        "blog-4 blog-5 blog-6";
+}
+
+.hero-img {
+    background-image: url(/images/hero-img.png);
+    background-position: center;
+    padding: 350px 0;
+    width: 100%;
+    grid-area: hero-img;
+    color:white;
+}
+
+.blog-img-1 {
+    grid-area: blog-1;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-img-2 {
+    grid-area: blog-2;
+    display: flex;
+    flex-direction: column;
+}
+.blog-img-3 {
+    grid-area: blog-3;
+    display: flex;
+    flex-direction: column;
+}
+.blog-img-4 {
+    grid-area: blog-4;
+    display: flex;
+    flex-direction: column;
+}
+.blog-img-5 {
+    grid-area: blog-5;
+    display: flex;
+    flex-direction: column;
+}
+.blog-img-6 {
+    grid-area: blog-6;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-1, 
+.img-2, 
+.img-3,
+.img-4,
+.img-5,
+.img-6 {
+    width: 80%;
+    height: 55%;
+}
+
