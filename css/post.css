@@ -25,12 +25,10 @@ header {
     padding: 3px 0 0 30px;
 }
 
-.home {
-
-}
+.home {}
 
 .about {
-    padding:0 40px;
+    padding: 0 40px;
 }
 
 .nav {
@@ -84,12 +82,12 @@ li {
 .hero-container {
     display: flex;
     flex-direction: column;
-    padding-top:100px;
+    padding-top: 100px;
 }
 
 date {
     font-size: 15px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .hero-header {
@@ -107,17 +105,17 @@ date {
     grid-area: blog-1;
     display: flex;
     flex-direction: column;
-    padding-left:3em;
-    padding-top:3em;
-    padding-right:2em;
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-right: 2em;
 }
 
 .blog-img-2 {
     grid-area: blog-2;
     display: flex;
     flex-direction: column;
-    padding-top:3em;
-    padding-right:2em;
+    padding-top: 3em;
+    padding-right: 2em;
 }
 
 .blog-img-3 {
@@ -125,8 +123,8 @@ date {
     display: flex;
     flex-direction: column;
     padding-right: 4em;
-    padding-top:3em;
- 
+    padding-top: 3em;
+
 }
 
 
