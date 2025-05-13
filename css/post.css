@@ -1,0 +1,149 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.post-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        " blog-1   blog-2   blog-3 "
+        "....      view     ...."
+        "foot      foot     foot";
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-h1-container {
+    display: flex;
+    flex-direction: row;
+    padding: 3px 0 0 30px;
+}
+
+.home {
+
+}
+
+.about {
+    padding:0 40px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    align-items: flex-end;
+    font-size: 1.56rem;
+    font-weight: 600;
+}
+
+.header-emoji-pic {
+    width: 3vw;
+    height: 6vh;
+    padding: .625em;
+    align-self: center;
+}
+
+.hero-img {
+    height: 100vh;
+    width: 100vw;
+    align-self: center;
+    color: white;
+    max-width: 1440px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 23px;
+}
+
+.hero-container-content {
+    padding-left: 90px;
+    padding-bottom: 60px;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    padding-top:100px;
+}
+
+date {
+    font-size: 15px;
+    margin-top:20px;
+}
+
+.hero-header {
+    font-size: 45px;
+}
+
+.hero-paragraph {
+    font-size: 22px;
+    width: 80vw;
+}
+
+
+
+.blog-img-1 {
+    grid-area: blog-1;
+    display: flex;
+    flex-direction: column;
+    padding-left:3em;
+    padding-top:3em;
+    padding-right:2em;
+}
+
+.blog-img-2 {
+    grid-area: blog-2;
+    display: flex;
+    flex-direction: column;
+    padding-top:3em;
+    padding-right:2em;
+}
+
+.blog-img-3 {
+    grid-area: blog-3;
+    display: flex;
+    flex-direction: column;
+    padding-right: 4em;
+    padding-top:3em;
+ 
+}
+
+
+.img-1,
+.img-2,
+.img-3,
+.img-4,
+.img-5,
+.img-6 {
+    width: 100%;
+    height: 50%;
+}
+
+.footer {
+    grid-area: foot;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
