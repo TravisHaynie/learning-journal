@@ -49,6 +49,10 @@ li {
     font-weight: 600;
 }
 
+.about {
+    cursor: pointer;
+}
+
 .header-emoji-pic {
     width: 3vw;
     height: 6vh;
@@ -164,4 +168,97 @@ date {
     background-color: black;
     color: white;
     padding: 10px;
+}
+
+@media  (max-width:500px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas:
+            "hero-img "
+            "blog-1"   
+            "blog-2"   
+            "blog-3"
+            "blog-4"
+            "blog-5"
+            "blog-6 "
+            "view"
+            "foot ";
+    }
+
+    .blog-img-1,
+    .blog-img-2,
+    .blog-img-3,
+    .blog-img-4,
+    .blog-img-5,
+    .blog-img-6 {
+        gap:1em;
+        margin:0;
+        height:60vh;
+        padding:0 2em;
+    }
+
+    .blog-img-1 {
+        padding-left:2em;
+        padding-right:2em;
+        padding-top:2em;
+    }
+
+    .date,
+    h2,
+    p {
+        margin:0;
+    }
+
+    .hero-img {
+        height: 60vh;
+        
+    }
+
+    .hero-container {
+        padding-left:20px;
+        padding-bottom: 20px;
+    }
+
+    .hero-paragraph {
+        width: 85vw;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .hero-header {
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+
+    .view-more {
+        padding-bottom: 2em;
+    }
+
+    li {
+        padding-left:0;
+        padding-right: 1em;
+        font-size: 15px;
+    }
+
+    .header-emoji {
+        font-size: 20px;
+        align-self: center;
+        padding-left:5px;
+    }
+
+    .header-emoji-pic {
+        width: 3vh;
+        height: 3vh;
+        padding: 0;
+    }
+    
+    h3 {
+        margin: 5px 0;
+    }
+
+    .footer {
+        padding:30px;
+        font-size:10px;
+    }
 }

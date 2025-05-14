@@ -13,6 +13,10 @@ body {
         "foot      foot     foot";
 }
 
+.home {
+    cursor: pointer;
+}
+
 header {
     display: flex;
     flex-direction: row;

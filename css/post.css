@@ -74,6 +74,10 @@ li {
     font-size: 23px;
 }
 
+.about {
+    cursor: pointer;
+}
+
 .hero-container-content {
     padding-left: 90px;
     padding-bottom: 60px;
