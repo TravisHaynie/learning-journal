@@ -11,7 +11,7 @@ main {
         "hero-img hero-img hero-img  "
         " blog-1   blog-2   blog-3 "
         " blog-4   blog-5   blog-6 "
-        "....      view     ...."
+        ".      view     ."
         "foot      foot     foot";
 }
 
@@ -26,8 +26,6 @@ header {
     flex-direction: row;
     padding: 3px 0 0 30px;
 }
-
-
 
 .nav {
     display: flex;
@@ -92,8 +90,6 @@ date {
     font-size: 22px;
     width: 54vw;
 }
-
-
 
 .blog-img-1 {
     grid-area: blog-1;
