@@ -109,7 +109,7 @@ date {
     width: 17%;
 }
 
-.roku-gretting {
+.roku-greeting {
     max-width: 1450px;
     display: flex;
     flex-direction: row;
@@ -168,4 +168,133 @@ date {
     background-color: black;
     color: white;
     padding: 10px;
+}
+
+@media  (max-width:500px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas:
+            "hero-img "
+            "blog-1"   
+            "blog-2"   
+            "blog-3"
+            "view"
+            "foot ";
+    }
+
+    .about {
+        padding-right: 25px;
+        padding-left: 0;
+    }
+
+    .header-h1-container {
+        padding: 3px 0 0 30px;
+    }
+
+    .blog-img-1,
+    .blog-img-2,
+    .blog-img-3 {
+        gap:1em;
+        margin:0;
+        height:60vh;
+        padding:0 0;
+    }
+
+    .blog-img-1 {
+        padding-left:0;
+        padding-right:0;
+        padding-top:2em;
+    }
+
+    .date,
+    h2,
+    p {
+        margin:0;
+    }
+
+    .roku-greeting {
+        display: block;
+        padding: 0;
+    }
+
+    .hi-there {
+        padding:20px 0;
+        font-size: 40px;
+    }
+
+    .photo-img {
+        width: 45vw;
+        padding:20px 0;
+    }
+    
+    .post-content {
+        font-size: 1em;
+    }
+
+    .padding {
+        padding: 20px;
+    }
+
+    .post-section { 
+        display: block;
+    }
+
+    .hero-container-content {
+        padding-left:0;
+        padding-bottom: 0;
+    }
+
+    .hero-paragraph {
+        width: 85vw;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .hero-header {
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+
+    li {
+        padding-left:0;
+        padding-right: 25px;
+        font-size: 15px;
+    }
+
+    .header-emoji {
+        font-size: 20px;
+        align-self: center;
+        padding-left:5px;
+    }
+
+    .header-emoji-pic {
+        width: 3vh;
+        height: 3vh;
+        padding: 0;
+    }
+    
+    h3 {
+        margin: 5px 0;
+    }
+
+    .post-header{
+        padding-bottom: 1em;
+        padding-top:1em;
+    }
+
+    .post-p {
+        padding-top: 1em;
+    }
+
+    .recent-posts {
+        text-align: center;
+        font-weight: bolder;
+        padding-top:70px;
+    }
+
+    .footer {
+        padding:30px;
+        font-size:10px;
+    }
 }

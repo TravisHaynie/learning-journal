@@ -199,8 +199,6 @@ date {
     }
 
     .blog-img-1 {
-        padding-left:2em;
-        padding-right:2em;
         padding-top:2em;
     }
 
@@ -211,8 +209,7 @@ date {
     }
 
     .hero-img {
-        height: 60vh;
-        
+        height: 60vh; 
     }
 
     .hero-container {
@@ -235,9 +232,10 @@ date {
         padding-bottom: 2em;
     }
 
+
     li {
         padding-left:0;
-        padding-right: 1em;
+        padding-right: 25px;
         font-size: 15px;
     }
 

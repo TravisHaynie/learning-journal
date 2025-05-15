@@ -1,4 +1,4 @@
-html,
+
 body {
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ header {
     padding: 3px 0 0 30px;
 }
 
-.home {}
+
 
 .about {
     padding: 0 40px;
@@ -48,6 +48,7 @@ li {
     align-items: flex-end;
     font-size: 1.56rem;
     font-weight: 600;
+    padding: 0 25px;
 }
 
 .header-emoji-pic {
@@ -76,6 +77,7 @@ li {
 
 .about {
     cursor: pointer;
+    
 }
 
 .hero-container-content {
@@ -148,4 +150,117 @@ date {
     background-color: black;
     color: white;
     padding: 10px;
+}
+
+@media  (max-width:500px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas:
+            "hero-img "
+            "blog-1"   
+            "blog-2"   
+            "blog-3"
+            "view"
+            "foot ";
+    }
+
+    .blog-img-1,
+    .blog-img-2,
+    .blog-img-3 {
+        gap:1em;
+        margin:0;
+        height:60vh;
+        padding:0 0;
+    }
+
+    .date,
+    h2,
+    p {
+        margin:0;
+    }
+
+    .post-content {
+        padding: 20px;
+    }
+
+    .post-section { 
+        padding: 20px;
+        display: block;
+    }
+
+    .hero-container-content {
+        padding-left:0;
+        padding-bottom: 0;
+    }
+
+    .hero-container {
+        padding:20px;
+    }
+
+    .hero-paragraph {
+        width: 85vw;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .hero-header {
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+
+    .hero-img {
+        height: 35vh;
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2em
+    }
+
+    .about {
+        padding-left: 0;
+        padding-right: 25px;
+    }
+
+
+    li {
+        padding-left:0;
+        font-size: 15px;
+    }
+
+    .header-emoji {
+        font-size: 20px;
+        align-self: center;
+        padding-left:5px;
+    }
+
+    .header-emoji-pic {
+        width: 3vh;
+        height: 3vh;
+        padding: 0;
+    }
+    
+    h3 {
+        margin: 5px 0;
+    }
+
+    .post-header{
+        padding-bottom: 1em;
+        padding-top:1em;
+    }
+
+    .post-p {
+        padding-top: 1em;
+    }
+
+    .recent-posts {
+        text-align: center;
+        font-weight: bolder;
+        padding-top:70px;
+    }
+
+    .footer {
+        padding:30px;
+        font-size:10px;
+    }
 }
