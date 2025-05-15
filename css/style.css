@@ -24,7 +24,7 @@ header {
 .header-h1-container {
     display: flex;
     flex-direction: row;
-    padding: 3px 0 0 30px;
+    padding: .187em 0 0 1.875em;
 }
 
 .nav {
@@ -43,7 +43,7 @@ li {
     display: inline;
     align-items: flex-end;
     font-size: 1.56rem;
-    padding: 0 25px;
+    padding: 0 1.041em;
     font-weight: 600;
 }
 
@@ -73,21 +73,21 @@ li {
 }
 
 .hero-container {
-    padding-left: 90px;
-    padding-bottom: 60px;
+    padding-left: 5.625em;
+    padding-bottom: 3.75em;
 }
 
 date {
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: 1.333rem;
+    margin-top: 1.25em;
 }
 
 .hero-header {
-    font-size: 45px;
+    font-size: 2.812rem;
 }
 
 .hero-paragraph {
-    font-size: 22px;
+    font-size: 1.375rem;
     width: 54vw;
 }
 
@@ -156,8 +156,8 @@ date {
     grid-area: view;
     text-decoration: underline;
     font-weight: bolder;
-    font-size: 24px;
-    margin-right:20px;
+    font-size: 1.5rem;
+    margin-right: 1.25em;
 }
 
 .footer {
@@ -165,17 +165,17 @@ date {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: .625em;
 }
 
-@media  (max-width:500px) {
+@media (max-width:500px) {
     main {
         grid-template-columns: repeat(1, 1fr);
         grid-template-columns: repeat(9, 1fr);
         grid-template-areas:
             "hero-img "
-            "blog-1"   
-            "blog-2"   
+            "blog-1"
+            "blog-2"
             "blog-3"
             "blog-4"
             "blog-5"
@@ -190,57 +190,58 @@ date {
     .blog-img-4,
     .blog-img-5,
     .blog-img-6 {
-        gap:1em;
-        margin:0;
-        height:60vh;
-        padding:0 2em;
+        gap: 1em;
+        margin: 0;
+        height: 60vh;
+        padding: 0 2em;
     }
 
     .blog-img-1 {
-        padding-top:2em;
+        padding-top: 2em;
     }
 
     .date,
     h2,
     p {
-        margin:0;
+        margin: 0;
     }
 
     .hero-img {
-        height: 60vh; 
+        height: 60vh;
     }
 
     .hero-container {
-        padding-left:20px;
-        padding-bottom: 20px;
+        padding-left:1.25em;
+        padding-bottom: 1.25em;
     }
 
     .hero-paragraph {
         width: 85vw;
         margin: 0;
-        padding-bottom: 20px;
+        padding-bottom: 1.25em;
     }
 
     .hero-header {
-        margin-top:10px;
-        margin-bottom:20px;
+        margin-top: .625em;
+        margin-bottom: 1.25em;
     }
 
     .view-more {
         padding-bottom: 2em;
+        margin-right: 0;
     }
 
 
     li {
-        padding-left:0;
-        padding-right: 25px;
-        font-size: 15px;
+        padding-left: 0;
+        padding-right: .6em;
+        font-size: .9375rem;
     }
 
     .header-emoji {
-        font-size: 20px;
+        font-size: 1.25rem;
         align-self: center;
-        padding-left:5px;
+        padding-left: .25em;
     }
 
     .header-emoji-pic {
@@ -248,13 +249,13 @@ date {
         height: 3vh;
         padding: 0;
     }
-    
+
     h3 {
-        margin: 5px 0;
+        margin: .3125em 0;
     }
 
     .footer {
-        padding:30px;
-        font-size:10px;
+        padding: 3em;
+        font-size: .625rem;
     }
 }

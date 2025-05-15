@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -22,7 +21,7 @@ header {
 .header-h1-container {
     display: flex;
     flex-direction: row;
-    padding: 3px 0 0 30px;
+    padding: .1875em 0 0 1.875em;
 }
 
 .nav {
@@ -42,7 +41,7 @@ li {
     align-items: flex-end;
     font-size: 1.56rem;
     font-weight: 600;
-    padding: 0 25px;
+    padding: 0 1.041em;
 }
 
 .header-emoji-pic {
@@ -66,45 +65,44 @@ li {
     max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
-    font-size: 23px;
+    font-size: 1.437rem;
 }
 
 .about {
     cursor: pointer;
-    
 }
 
 .hero-container-content {
-    padding-left: 90px;
-    padding-bottom: 60px;
+    padding-left: 5.625em;
+    padding-bottom: 3.75em;
 }
 
 .hero-container {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 6.25em;
 }
 
 date {
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: .9375rem;
+    margin-top: 1.333em;
 }
 
 .hero-header {
-    font-size: 45px;
+    font-size: 2.8125rem;
 }
 
 .hero-paragraph {
-    font-size: 22px;
+    font-size: 1.375rem;
     width: 80vw;
 }
 
 .recent-posts {
     text-align: center;
     font-weight: bolder;
-    font-size: 24px;
-    padding-top:70px;
-    margin-right: 20px;
+    font-size: 1.5rem;
+    padding-top: 2.916em;
+    margin-right: .8333em;
 }
 
 .blog-img-1 {
@@ -149,17 +147,17 @@ date {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: .625em;
 }
 
-@media  (max-width:500px) {
+@media (max-width:500px) {
     main {
         grid-template-columns: repeat(1, 1fr);
         grid-template-columns: repeat(9, 1fr);
         grid-template-areas:
             "hero-img "
-            "blog-1"   
-            "blog-2"   
+            "blog-1"
+            "blog-2"
             "blog-3"
             "view"
             "foot ";
@@ -168,45 +166,45 @@ date {
     .blog-img-1,
     .blog-img-2,
     .blog-img-3 {
-        gap:1em;
-        margin:0;
-        height:60vh;
-        padding:0 0;
+        gap: 1em;
+        margin: 0;
+        height: 60vh;
+        padding: 0 0;
     }
 
     .date,
     h2,
     p {
-        margin:0;
+        margin: 0;
     }
 
     .post-content {
-        padding: 20px;
+        padding: 1.25em;
     }
 
-    .post-section { 
-        padding: 20px;
+    .post-section {
+        padding: 1.25em;
         display: block;
     }
 
     .hero-container-content {
-        padding-left:0;
+        padding-left: 0;
         padding-bottom: 0;
     }
 
     .hero-container {
-        padding:20px;
+        padding: 1.25em;
     }
 
     .hero-paragraph {
         width: 85vw;
         margin: 0;
-        padding-bottom: 20px;
+        padding-bottom: 1.25em;
     }
 
     .hero-header {
-        margin-top:10px;
-        margin-bottom:20px;
+        margin-top: .625em;
+        margin-bottom: 1.25em;
     }
 
     .hero-img {
@@ -219,19 +217,19 @@ date {
 
     .about {
         padding-left: 0;
-        padding-right: 25px;
+        padding-right: 1.5625em;
     }
 
 
     li {
-        padding-left:0;
-        font-size: 15px;
+        padding-left: 0;
+        font-size: .9375rem;
     }
 
     .header-emoji {
-        font-size: 20px;
+        font-size: 1.25rem;
         align-self: center;
-        padding-left:5px;
+        padding-left: .25em;
     }
 
     .header-emoji-pic {
@@ -239,14 +237,14 @@ date {
         height: 3vh;
         padding: 0;
     }
-    
+
     h3 {
-        margin: 5px 0;
+        margin: .3125em 0;
     }
 
-    .post-header{
+    .post-header {
         padding-bottom: 1em;
-        padding-top:1em;
+        padding-top: 1em;
     }
 
     .post-p {
@@ -256,11 +254,11 @@ date {
     .recent-posts {
         text-align: center;
         font-weight: bolder;
-        padding-top:70px;
+        padding-top: 4.375;
     }
 
     .footer {
-        padding:30px;
-        font-size:10px;
+        padding: 3em;
+        font-size: .625rem;
     }
 }
