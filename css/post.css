@@ -7,9 +7,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-        " blog-1   blog-2   blog-3 "
-        "....      view     ...."
-        "foot      foot     foot";
+        "blog-1   blog-2   blog-3";
 }
 
 header {
@@ -83,7 +81,7 @@ li {
     padding-top: 6.25em;
 }
 
-date {
+.date {
     font-size: .9375rem;
     margin-top: 1.333em;
 }
@@ -143,7 +141,6 @@ date {
 }
 
 .footer {
-    grid-area: foot;
     text-align: center;
     background-color: black;
     color: white;
@@ -158,9 +155,7 @@ date {
             "hero-img "
             "blog-1"
             "blog-2"
-            "blog-3"
-            "view"
-            "foot ";
+            "blog-3";
     }
 
     .blog-img-1,

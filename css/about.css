@@ -8,8 +8,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-        " blog-1   blog-2   blog-3 "
-        "....      view     ...."
+        "blog-1   blog-2   blog-3"
         "foot      foot     foot";
 }
 
@@ -89,7 +88,7 @@ li {
     padding-top: 6.25em;
 }
 
-date {
+.date {
     font-size: .9375rem;
     margin-top: 1.333em;
 }
@@ -123,7 +122,7 @@ date {
     width: 90vw;
 }
 
-.roku-gretting-text {
+.roku-greeting-text {
     margin-left: 1.041em;
     margin-right: 2.916em;
     font-size: 1.5rem;
@@ -185,13 +184,11 @@ date {
 @media (max-width:500px) {
     main {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-columns: repeat(9, 1fr);
         grid-template-areas:
             "hero-img "
             "blog-1"
             "blog-2"
             "blog-3"
-            "view"
             "foot ";
     }
 
