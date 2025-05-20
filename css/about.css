@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 .post-section {
@@ -14,6 +15,8 @@ body {
 
 .home {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 header {
@@ -103,7 +106,7 @@ li {
 }
 
 .photo-img {
-    width: 20%;
+    width: 30%;
     padding-right: 2em;
 }
 
@@ -130,8 +133,6 @@ li {
 
 .blog-img-1 {
     grid-area: blog-1;
-    display: flex;
-    flex-direction: column;
     padding-left: 3em;
     padding-top: 3em;
     padding-right: 2em;
@@ -139,16 +140,12 @@ li {
 
 .blog-img-2 {
     grid-area: blog-2;
-    display: flex;
-    flex-direction: column;
     padding-top: 3em;
     padding-right: 2em;
 }
 
 .blog-img-3 {
     grid-area: blog-3;
-    display: flex;
-    flex-direction: column;
     padding-right: 4em;
     padding-top: 3em;
 
@@ -181,6 +178,65 @@ li {
     padding: .625em;
 }
 
+@media (max-width:850px) {
+    .post-section {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "hero-img"
+            "blog-1"
+            "blog-2"
+            "blog-3"
+            "foot ";
+            padding: 1em;
+    }
+
+    .blog-img-1 {
+        padding: 0;
+    }
+
+    .blog-img-2 {
+        padding: 0;
+    }
+
+    .blog-img-3 {
+        padding: 0;
+    }
+
+    .roku-greeting {
+        display: block;
+        width:100vw;
+        padding:0;
+        margin: 0;
+    }
+
+    .photo-img {
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    .header-emoji-pic {
+        width: 3vw;
+        height: 4vh;
+    }
+
+    header {
+        padding-bottom: 2em;
+    }
+
+    .header-h1-container {
+        font-size: 8px;
+    }
+
+    .home, .about {
+        font-size: 15px;
+    }
+
+    .post-content {
+        padding: 1em;
+    }
+}
+
 @media (max-width:500px) {
     main {
         grid-template-columns: repeat(1, 1fr);
@@ -199,6 +255,10 @@ li {
 
     .header-h1-container {
         padding: .1875em 0 0 1.875em;
+    }
+
+    header {
+        padding-bottom: 2em;
     }
 
     .blog-img-1,
@@ -233,16 +293,13 @@ li {
     }
 
     .photo-img {
-        width: 45vw;
-        padding: 1.25em 0;
+       display: block;
+       margin: auto;
+       width: 50%;
     }
 
     .post-content {
         font-size: 1em;
-    }
-
-    .padding {
-        padding: 1.25em;
     }
 
     .post-section {

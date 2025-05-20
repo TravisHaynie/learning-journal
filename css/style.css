@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3", sans-serif;
 }
 
 main {
@@ -48,6 +49,8 @@ li {
 
 .about {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .header-emoji-pic {
@@ -58,7 +61,7 @@ li {
 }
 
 .hero-img {
-    background-image: url(/images/hero-img.png);
+    background-image: url(../images/hero-img.png);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -246,7 +249,7 @@ li {
         width: 3vh;
         height: 3vh;
         padding: 0;
-        
+
     }
 
     h3 {
