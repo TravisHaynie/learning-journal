@@ -10,6 +10,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:ital,wght@0,100..900;1,100..900&family=
         Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=
         Special+Elite&display=swap" rel="stylesheet"> 
+        <!-- Font Awesome Free CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     </head>
     <body>
         <header>
@@ -18,12 +21,13 @@
                 <h1 class="header-emoji">My Learning Journal</h1>
             </div>
                 <nav class="nav">
-                    <ul class="nav-links">
-                        <li>Home</li>
-                        <li id="post"><a class="about" href="post.html">About</a></li>
+                    <button class="button" id="menu-drop" type="button" title="button">
+                        <i class="fa-solid fa-bars hamburger"></i> 
+                    </button>
+                    <ul class="nav-links hidden" id="nav-links">
+                        <li id="post"><a class="about" href="post.html">Post</a></li>
                     </ul>
                 </nav>
-            </div>
         </header>
         <main class="main-container">
                 <article class="hero-img">
@@ -37,48 +41,48 @@
                     </div> 
                 </article>
             <section class="post-section">
-                <article class="blog-img-1">
-                    <img class="img-6" alt="A computer with code on the screen sitting on a desk" src="images/blog-img-6.png">
+                <article class="blog-img-1 blog">
+                    <img class="img" alt="A computer with code on the screen sitting on a desk" src="images/blog-img-6.png">
                     <p>July 23,2022</p>
                     <h2>Blog one</h2>
                     <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of 
                         learning in the Frontend Developer Career Path.
                     </p>
                 </article>
-                <article class="blog-img-2">
-                    <img class="img-4" alt="A picture with a hand holding a lightbulb with sunset colors in the back" src="images/blog-img-4.png">
+                <article class="blog-img-2 blog">
+                    <img class="img" alt="A picture with a hand holding a lightbulb with sunset colors in the back" src="images/blog-img-4.png">
                     <p>July 23,2022</p>
                     <h2>Blog two</h2>
                     <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of 
                         learning in the Frontend Developer Career Path.
                     </p>
                 </article>
-                <article class="blog-img-3">
-                    <img class="img-5" alt="An abstract picture with dark blues and purple" src="images/blog-img-5.png">
+                <article class="blog-img-3 blog">
+                    <img class="img" alt="An abstract picture with dark blues and purple" src="images/blog-img-5.png">
                     <p>July 23,2022</p>
                     <h2>Blog three</h2>
                     <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of 
                         learning in the Frontend Developer Career Path.
                     </p>
                 </article>
-                <article class="blog-img-4">
-                    <img class="img-3" alt="A picture of a girl dancing on the beach" src="images/blog-img-3.png">
+                <article class="blog-img-4 blog">
+                    <img class="img" alt="A picture of a girl dancing on the beach" src="images/blog-img-3.png">
                     <p>July 23,2022</p>
                     <h2>Blog four</h2>
                     <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of 
                         learning in the Frontend Developer Career Path.
                     </p>
                 </article>
-                <article class="blog-img-5">
-                    <img class="img-1" alt="A picture of a dark computer screen with code on it" src="images/blog-img-1.png">
+                <article class="blog-img-5 blog">
+                    <img class="img" alt="A picture of a dark computer screen with code on it" src="images/blog-img-1.png">
                     <p>July 23,2022</p>
                     <h2>Blog five</h2>
                     <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of 
                         learning in the Frontend Developer Career Path.
                     </p>
                 </article>
-                <article class="blog-img-6">
-                    <img class="img-2" alt="A picture of a computer with writing on the screen" src="images/blog-img-2.png">
+                <article class="blog-img-6 blog">
+                    <img class="img" alt="A picture of a computer with writing on the screen" src="images/blog-img-2.png">
                     <p>July 23,2022</p>
                     <h2>Blog six</h2>
                     <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of 
@@ -86,12 +90,14 @@
                     </p>
                 </article>
             </section>
-            <p class="view-more">View More</p>
+            <p class="view-more" id="view-more">View More</p>
+            <section id="view-more-blog" class="second-blog-height"></section>
         </main>
         <footer class="footer">
-            <h3>My Learning Journal</h3>
-            <p>Copyright&copy;2022</p>
+            <h3 class="foot">My Learning Journal</h3>
+            <p class="foot">Copyright&copy;2022</p>
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
 
