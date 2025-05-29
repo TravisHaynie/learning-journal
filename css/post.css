@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Source Sans 3", sans-serif;
-    min-width: 500px;
+    min-width: 600px;
     max-width: 1800px;
 }
 
@@ -69,11 +69,11 @@ li {
     cursor: pointer;
     text-decoration: none;
     color: black;
-    display: block;
 }
 
 .home {
-    display: block;
+    color: black;
+    text-decoration: none;
 }
 
 .header-emoji-pic {
@@ -171,6 +171,12 @@ li {
     margin:0;
 }
 
+@media (max-width:850px) {
+    .header-h1-container {
+        font-size: .65em;
+    }
+}
+
 @media (max-width:800px) {
     .blog-img-1,
     .blog-img-2,
@@ -199,7 +205,7 @@ li {
     }
  
     .hero-container {
-        padding: 1.25em;
+        padding: 4em 1.25em 1.25em 1.25em;
     }
 
     .hero-paragraph {

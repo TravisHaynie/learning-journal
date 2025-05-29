@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: "Source Sans 3", sans-serif;
     max-width: 1800px;
-    min-width: 500px;
+    min-width: 600px;
 }
 
 .post-section {
@@ -168,6 +168,14 @@ li {
 
     .hero-img {
         max-height: 650px;
+    }
+}
+
+  
+
+@media (max-width:850px) {
+    .header-h1-container {
+        font-size: .65em;
     }
 }
 
