@@ -11,7 +11,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 600px;
     gap: 2em;
-    padding: 0 3em 0 3em;
+    padding: 0 3em;
 }
 
 .show {
@@ -58,7 +58,7 @@ header {
 }
 
 li {
-    display:block;
+    display: block;
     align-items: flex-end;
     font-size: 1.56rem;
     padding: 0 1.041em;
@@ -78,13 +78,13 @@ li {
 
 .header-emoji-pic {
     width: 30px;
-    padding: 0 .625em 0 3em;
+    padding: 0 0.625em 0 3em;
 }
 
 .button {
     background: none;
-    border:none;
-    padding-right:40px;
+    border: none;
+    padding-right: 40px;
 }
 
 .hero-img {
@@ -108,12 +108,6 @@ li {
     padding-right: 2em;
 }
 
-.about {
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
-}
-
 .hero-container-content {
     font-size: 1.437rem;
     margin-left: auto;
@@ -132,7 +126,7 @@ li {
 }
 
 .date {
-    font-size: .9375rem;
+    font-size: 0.9375rem;
     margin-top: 1.333em;
 }
 
@@ -151,41 +145,33 @@ li {
     font-weight: bolder;
     font-size: 1.5rem;
     padding-top: 2.916em;
-    margin-right: .8333em;
+    margin-right: 0.8333em;
 }
-
 
 .img {
     width: 100%;
     height: 50%;
+    object-fit: cover;
 }
 
 .footer {
     text-align: center;
     background-color: black;
     color: white;
-   padding: 2em;
+    padding: 2em;
 }
 
 .foot {
-    margin:0;
+    margin: 0;
 }
 
-@media (max-width:850px) {
+@media (max-width: 850px) {
     .header-h1-container {
-        font-size: .65em;
+        font-size: 0.65em;
     }
 }
 
-@media (max-width:800px) {
-    .blog-img-1,
-    .blog-img-2,
-    .blog-img-3 {
-        margin: 0;
-        height: 60vh;
-        padding: 0 0;
-    }
-
+@media (max-width: 800px) {
     .date,
     h2,
     p {
@@ -203,7 +189,7 @@ li {
     .hero-container-content {
         padding: 0;
     }
- 
+
     .hero-container {
         padding: 4em 1.25em 1.25em 1.25em;
     }
@@ -213,21 +199,18 @@ li {
         padding-bottom: 1.25em;
     }
 
-
     .about {
         padding-left: 0;
         padding-right: 1.5625em;
     }
 
-
     li {
         padding-left: 0;
-        font-size: .9375rem;
+        font-size: 0.9375rem;
     }
 
-
     h3 {
-        margin: .3125em 0;
+        margin: 0.3125em 0;
     }
 
     .post-header {
@@ -242,11 +225,7 @@ li {
     .recent-posts {
         text-align: center;
         font-weight: bolder;
-        padding-top: 4.375;
+        padding-top: 4.375em;
     }
 
-    .footer {
-        padding: 3em;
-        font-size: .625rem;
-    }
 }
