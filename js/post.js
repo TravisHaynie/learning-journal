@@ -1,8 +1,20 @@
 const menuBtn = document.getElementById("menu-drop");
-const hamburgerMenu = document.getElementById("nav-links");
+const hamburgerMenu = document.getElementById("modal");
+const closeMenu = document.getElementById("close-menu");
 
 
-menuBtn.addEventListener('click', function() {
-    hamburgerMenu.classList.toggle('show');
-    hamburgerMenu.classList.toggle('hidden');
+closeMenu.addEventListener("click", function() {
+    if(window.innerWidth <= 850) {
+        hamburgerMenu.style.display = "none";
+        menuBtn.style.display = "block";
+    }
+   
 })
+
+menuBtn.addEventListener("click", function() {
+    if(window.innerWidth <=850) {
+        hamburgerMenu.style.display = "flex";
+        menuBtn.style.display = "none";
+    }
+   
+});

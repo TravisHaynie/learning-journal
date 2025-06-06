@@ -1,10 +1,14 @@
 html,
 body {
     margin: 0;
-    padding: 0;
     font-family: "Source Sans 3", sans-serif;
     min-width: 500px;
     max-width: 1800px;
+    margin:auto;
+}
+
+.body-padding {
+    padding: 0 3em;
 }
 
 .post-section {
@@ -12,7 +16,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-auto-rows: 550px;
     gap: 2em;
-    padding: 0 2em 0 2em;
 }
 
 .show {
@@ -33,6 +36,10 @@ header {
     align-items: center;
 }
 
+.header-emoji {
+    font-size: 2em;
+}
+
 .header-h1-container {
     display: flex;
     align-items: center;
@@ -42,16 +49,9 @@ header {
     display: none;
 }
 
-.nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    right: 39px;
-    top: 60px;
-    background: white;
-    border: 1px solid black;
-    border-radius: 3px;
+.close-menu {
+    display: none;
+    color: white;
 }
 
 .hamburger {
@@ -59,10 +59,9 @@ header {
 }
 
 li {
-    display:block;
+    display: inline;
     align-items: flex-end;
     font-size: 1.56rem;
-    padding: 0 1.041em;
     font-weight: 600;
 }
 
@@ -75,20 +74,19 @@ li {
 .home {
     color: black;
     text-decoration: none;
+    margin: 0 .75em;
 }
 
 .header-emoji-pic {
     width: 30px;
-    padding: 0 .625em 0 3em;
+    margin-right: .5em;
 }
 
 .button {
     background: none;
     border:none;
-    padding-right:40px;
+    padding: 0;
 }
-
-
 
 .post-content {
     display: flex;
@@ -149,9 +147,7 @@ li {
 }
 
 .roku-greeting-text {
-    margin-left: 1.041em;
-    margin-right: 2.916em;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .img {
@@ -191,6 +187,73 @@ li {
         font-size: .65em;
     }
 
+    .modal-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.471);
+    }
+
+    .roku-greeting-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about {
+        color: white;
+    }
+
+    .home {
+        color: white;
+
+    }
+
+    li {
+        display: block;
+        text-align: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .button {
+        background: none;
+        border: none;
+        display: block;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        padding: 3em;
+        background: white;
+        border: 1px solid black;
+        background-color: black;
+        color:white;
+        border: 1px solid white;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .hamburger {
+        font-size: 20px;
+    }
+
+    .close-menu {
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        margin:10px;
+    }
+
     .roku-greeting {
         display: block;
         padding:3em 0 0 0;
@@ -204,7 +267,7 @@ li {
     }
 
     .post-content {
-        padding: 1em;
+        padding: 0;
     }
 }
 

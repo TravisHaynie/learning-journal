@@ -5,6 +5,20 @@ body {
     font-family: "Source Sans 3", sans-serif;
     max-width: 1800px;
     min-width: 600px;
+    margin:auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.nav-links {
+    margin: 0;
+    padding: 0;
 }
 
 .post-section {
@@ -30,43 +44,22 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    padding: 0 2em 0 2em;
+}
+
+.button {
+    display: none;
+    padding: 0;
+}
+
+.close-menu {
+    display: none;
+    color: white;
 }
 
 .header-h1-container {
     display: flex;
     align-items: center;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.button {
-    background: none;
-    border: none;
-    padding-right: 3em;
-}
-
-.nav-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    right: 39px;
-    top: 60px;
-    background: white;
-    border: 1px solid black;
-    border-radius: 3px;
-}
-
-.hamburger {
-    font-size: 20px;
 }
 
 li {
@@ -81,11 +74,12 @@ li {
     cursor: pointer;
     text-decoration: none;
     color: black;
+  
 }
 
 .header-emoji-pic {
     width: 30px;
-    padding: 0 0.625em 0 3em;
+    margin-right: .5em;
 }
 
 .hero-img {
@@ -173,6 +167,59 @@ li {
 @media (max-width: 850px) {
     .header-h1-container {
         font-size: 0.65em;
+        position: relative;
+    }
+
+    .modal-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.471);
+    }
+
+    .about {
+        color: white;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .button {
+        background: none;
+        border: none;
+        display: block;
+    }
+
+    .nav-links {
+        list-style-type: none;
+        padding: 3em;
+        background: white;
+        border: 1px solid black;
+        background-color: black;
+        color:white;
+        border: 1px solid white;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .hamburger {
+        font-size: 20px;
+    }
+
+    .close-menu {
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        margin:10px;
     }
 }
 
