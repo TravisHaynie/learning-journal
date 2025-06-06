@@ -22,18 +22,10 @@ body {
     display: inline-block;
 }
 
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 .header-emoji {
@@ -183,6 +175,11 @@ li {
 }
 
 @media (max-width:850px) {
+
+    header {
+        align-items: center;
+    }
+
     .header-h1-container {
         font-size: .65em;
     }
@@ -231,14 +228,18 @@ li {
 
     .nav-links {
         list-style-type: none;
-        padding: 3em;
         background: white;
-        border: 1px solid black;
         background-color: black;
         color:white;
         border: 1px solid white;
         border-radius: 10px;
         position: relative;
+        display: flex;
+        justify-content: center; 
+        align-items: center;   
+        height: 100%; 
+        width: 100%;
+        margin: 0;
     }
 
     .hamburger {
@@ -252,6 +253,7 @@ li {
         right: 0;
         font-size: 20px;
         margin:10px;
+        z-index: 1;
     }
 
     .roku-greeting {
