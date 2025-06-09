@@ -193,7 +193,6 @@ li {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.471);
     }
 
     .about {
@@ -222,11 +221,8 @@ li {
 
     .nav-links {
         list-style-type: none;
-        background: white;
         background-color: black;
         color:white;
-        border: 1px solid white;
-        border-radius: 10px;
         position: relative;
         display: flex;
         justify-content: center; 
